@@ -9,6 +9,13 @@ $(function () {
         if ($(this).html() == '=') {
 
             for (var iPos = 0; iPos < aElement.length; iPos++) {
+
+                if (aElement[iPos] === '÷'){
+                    aElement[iPos] = '/';
+                } else if (aElement[iPos] === 'x'){
+                    aElement[iPos] = '*';
+                }
+
                 sCalcul += aElement[iPos];
             }
             
